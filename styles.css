@@ -1,0 +1,67 @@
+body{
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0%;
+}
+#welcome-section{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    color: white;
+}
+
+#projects{
+    display: flex;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.project-tile{
+    margin-left: 12px;
+    border-color: aqua;
+    border-radius: 10%;
+    background-color:bisque;
+    padding-bottom:12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
+.tile-button{
+    background-color: azure;
+    border: none;
+    color:tan;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.tile-button:hover{
+    background-color: black;
+}
+#navbar{
+    display: flex;
+    font-size: 16px;
+    background-color: aliceblue;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+    
+}
+#navbar ul{
+    display:flex;
+    list-style-type: none;
+    gap: 20px;
+    
+}
+@media (max-width: 992px) {
+  body {
+    background-color: tan;
+  }
+}
