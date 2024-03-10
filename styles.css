@@ -4,12 +4,39 @@ body{
     padding: 0%;
     width: 100%;
 }
+
+#navbar{
+    display: flex;
+    font-size: 16px;
+    background-color:#d5ae7c;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#navbar h5 {
+    color: grey;
+    font-size: 20px;
+    background: radial-gradient(circle, rgba(220,220,220,1) 0%, rgba(212,173,123,1) 100%);
+    margin: 0;
+    padding: 0;
+    padding-top: 0.75rem;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+#navbar ul{
+    display:flex;
+    list-style-type: none;
+    gap: 20px;
+    
+}
+
 #welcome-section{
     margin: 0px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     background-color: antiquewhite;
     position: relative;
     z-index: 0;
@@ -45,10 +72,9 @@ body{
     width: fit-content;
     text-align: center;
     top:30%;
-    left: 30%;
     position: relative;
+    margin: 0 auto;
     font-size: 3.5rem;
-    flex-wrap: wrap;
     z-index: 1;
 }
 
@@ -57,6 +83,8 @@ body{
     display: flex;
     background-color: tan;
     padding-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .project-tile{
@@ -67,13 +95,10 @@ body{
     padding-bottom:12px;
     padding-left: 12px;
     padding-right: 12px;
-    width: 100%;
+    min-width: 25%;
     height: 150px;
     display: grid;
     place-items: center;
-}
-#projects .project-tile:last-of-type{
-    margin-right: 12px;
 }
 .tiramisu-img-bg{
     background-image: none;
@@ -96,20 +121,5 @@ body{
 }
 .tile-button:hover{
     background-color: black;
-}
-#navbar{
-    display: flex;
-    font-size: 16px;
-    background-color: aliceblue;
-    padding-left: 30px;
-    padding-right: 30px;
-    justify-content: space-between;
-    
-}
-#navbar ul{
-    display:flex;
-    list-style-type: none;
-    gap: 20px;
-    
 }
 
