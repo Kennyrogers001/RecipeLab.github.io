@@ -12,7 +12,8 @@ body{
     padding-bottom: 100px;
     background-color: antiquewhite;
     position: relative;
-    z-index: -2;
+    z-index: 0;
+    overflow: hidden;
 }
 
 #welcome-section h4{
@@ -21,17 +22,20 @@ body{
     color: gray;
     text-align: center;
     word-spacing: 30px;
-    overflow: hidden;
     position: absolute;
     top: 0px;
-    opacity: 40%;
-    z-index: -1;
+    opacity: 0.5;
+    transition: 0.4s ease;
+}
+#welcome-section h4 #glow-hover:hover{
+    color: black;
+    opacity: 1;    
 }
 #welcome-section h1{
     font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 3px;
     color:darksalmon;
-    background-color: white;
+    background-color: rgb(78, 38, 38);
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -44,7 +48,10 @@ body{
     left: 30%;
     position: relative;
     font-size: 3.5rem;
+    flex-wrap: wrap;
+    z-index: 1;
 }
+
 
 #projects{
     display: flex;
@@ -74,6 +81,7 @@ body{
 .tiramisu-img-bg:hover{
     background-image: url(https://img.freepik.com/free-photo/layered-chocola…mascarpone-cream-generated-by-ai_188544-18033.jpg);
     background-size: cover;
+    color: bisque;
 }
 .tile-button{
     background-color: azure;
