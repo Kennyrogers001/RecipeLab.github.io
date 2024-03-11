@@ -36,26 +36,30 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 160px;
     background-color: antiquewhite;
     position: relative;
     z-index: 0;
     overflow: hidden;
+    background-image: url(https://cdn.pixabay.com/photo/2017/07/11/19/41/yellowstone-2494789_960_720.jpg);
+    background-size: cover;
+    background-position:center ;
 }
 
 #welcome-section h4{
     padding: 0px;
     margin: 0px;
-    color: gray;
+    color: transparent;
     text-align: center;
-    word-spacing: 30px;
+    word-spacing: 20px;
     position: absolute;
     top: 0px;
     opacity: 0.5;
     transition: 0.4s ease;
+    font-size: 22px;
 }
 #welcome-section h4 #glow-hover:hover{
-    color: black;
+    color: white;
     opacity: 1;    
 }
 #welcome-section h1{
@@ -99,14 +103,29 @@ body{
     height: 150px;
     display: grid;
     place-items: center;
+    transition: 0.4s;
+}
+.project-tile:hover{
+    color:bisque;
+    font-size: 20px;;
 }
 .tiramisu-img-bg{
-    background-image: none;
-}
-.tiramisu-img-bg:hover{
+    background-size:cover;
     background-image: url(https://img.freepik.com/free-photo/layered-chocola…mascarpone-cream-generated-by-ai_188544-18033.jpg);
+}
+.baklava-img-bg{
+    background-image: url(	https://cdn.pixabay.com/photo/2016/10/21/22/22/baklava-1759329_1280.jpg);
     background-size: cover;
-    color: bisque;
+}
+.macaroon-img-bg{
+    background-size: contain;
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/20/17/00/pastry-731823_960_720.jpg);
+}
+.brownies-img-bg{
+    background-size: cover;
+    background-position: center ;
+    opacity:1;
+    background-image: url(https://cdn.pixabay.com/photo/2021/09/16/20/45/brownies-6631040_960_720.jpg);
 }
 .tile-button{
     background-color: azure;
