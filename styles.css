@@ -18,6 +18,7 @@ body{
     width: 100%;
     justify-content: center;
     position: fixed;
+    flex-wrap: wrap;
     z-index:  1;
 }
 #navbar h5 {
